@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			display: block;
+			justify-content:center;
+			background-color: grey;
+			align-items: center;
+			text-align: center;
+		}
+		body div{
+			margin-left: 10%;
+			margin-top: 10px;
+		}
+		div p{
+			padding-top: 50px;
+		}
+		#sector1{
+			background-color: red;
+			position: relative;
+			width: 500px;
+			height: 100px;
+			color: #000;
+			margin-bottom:10px;
+			border-radius: 30px;
+		}
+		#sector2{
+			background-color: red;
+			position: relative;
+			width: 500px;
+			height: 100px;
+			color: #000;
+			margin-bottom:10px;
+			border-radius: 30px;
+		}
+
+		#sector3{
+			background-color:#d21313;
+			position: relative;
+			width: 500px;
+			height: 100px;
+			color: #000;
+			margin-bottom:100px;
+			border-radius: 30px;
+		}
+		img{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			left: 0;
+			top: 0;
+		}
+		.ass p{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			left: 0;
+			top: 200px;
+			font-size: 100px;
+			color: red;
+		}
+		#img2{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			left: 0;
+			top: 0;
+		}
+		.as p{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			left: 0;
+			top: 200px;
+			font-size: 100px;
+			color: red;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="ass">
+		<img src="imgs/negr.jpg"id="img">
+		<p id="p">Маладэц</p>
+	</div>
+	<div class="as">
+		<img src="imgs/nigga.jpg"id="img2">
+		<p id="p2">НЕ Маладэц</p>
+	</div>
+	<div id="1">
+		<div id="sector1">
+			<p>жмав</p>
+		</div>
+		<div id="sector2">
+			<p>жмав</p>
+		</div>
+		<div id="sector3">
+			<p>жмав</p>
+		</div>
+	</div>
+</body>
+	<script>
+		$( "#sector3" ).click(function() {
+  		$( "#img" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+});
+		$( "#sector3" ).click(function() {
+  		$( "#1" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});	
+});
+		$( "#sector3" ).click(function() {
+  		$( "#p" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+});
+		$( "#sector1" ).click(function() {
+  		$( "#img2" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+});
+		$( "#sector1" ).click(function() {
+  		$( "#1" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});	
+});
+		$( "#sector1" ).click(function() {
+  		$( "#p2" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+});
+		$( "#sector2" ).click(function() {
+  		$( "#img2" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+});
+		$( "#sector2" ).click(function() {
+  		$( "#1" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});	
+});
+		$( "#sector2" ).click(function() {
+  		$( "#p2" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+});
+</script>
+</html>
